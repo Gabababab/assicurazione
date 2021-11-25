@@ -1,5 +1,6 @@
 package it.prova.assicurazione.service;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.data.domain.Page;
@@ -20,4 +21,8 @@ public interface AssicuratoService {
 	void delete(Assicurato input);
 	
 	Assicurato findByCodiceFiscale(String cf);
+	
+	Assicurato findByNomeAndCognomeAndCodiceFiscaleAndDataNascita(String nome, String cognome, String cf, Date date);
+	
+	boolean aggiungiAlDb(Assicurato input);
 }
