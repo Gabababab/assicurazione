@@ -8,7 +8,7 @@ public class Assicurato {
 	private String cognome;
 	private Date dataNascita;
 	private String codiceFiscale;
-	private Integer numeroSinistri;
+	private int numeroSinistri;
 
 	public Assicurato() {
 		super();
@@ -55,11 +55,11 @@ public class Assicurato {
 		this.codiceFiscale = codiceFiscale;
 	}
 
-	public Integer getNumeroSinistri() {
+	public int getNumeroSinistri() {
 		return numeroSinistri;
 	}
 
-	public void setNumeroSinistri(Integer numeroSinistri) {
+	public void setNumeroSinistri(int numeroSinistri) {
 		this.numeroSinistri = numeroSinistri;
 	}
 
