@@ -4,5 +4,5 @@ import java.io.File;
 
 public interface ProcessService {
 
-	void processa(File file);
+	void processa();
 }

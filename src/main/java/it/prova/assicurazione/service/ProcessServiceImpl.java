@@ -12,9 +12,9 @@ public class ProcessServiceImpl implements ProcessService {
 	FileProcessingService fileService;
 
 	@Override
-	public void processa(File file) {
+	public void processa() {
 
-		fileService.processaFile(file);
+		fileService.processaFile();
 
 	}
 

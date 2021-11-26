@@ -18,10 +18,11 @@ public class FileProcessingServiceImpl implements FileProcessingService {
 	AssicuratoService assicuratoService;
 
 	@Override
-	public void processaFile(File file) {
+	public void processaFile() {
 
-		Assicurati assicurati = (Assicurati) marshallingService.unmarshall(file);
+		File file = new File("Corso/xml/assicurati.xml");
 		
+		Assicurati assicurati = (Assicurati) marshallingService.unmarshall(file);
 		List<Assicurati.Assicurato> listaIterazione = assicurati.getAssicurato();
 
 		List<Assicurato> listaAssicurati = new ArrayList<Assicurato>();

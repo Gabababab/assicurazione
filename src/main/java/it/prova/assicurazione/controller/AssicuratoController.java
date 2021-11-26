@@ -20,8 +20,7 @@ public class AssicuratoController {
 	@GetMapping
 	public void trigger() {
 		
-			File file = new File("Corso/xml/assicurati.xml");
-			processService.processa(file);
+			processService.processa();
 			
 	}
 }
